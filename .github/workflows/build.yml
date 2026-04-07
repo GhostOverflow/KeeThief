@@ -18,7 +18,7 @@ jobs:
         run: msbuild KeeTheft/KeeTheft.sln /p:Configuration=Release /p:Platform="Any CPU"
         
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: KeeTheft
           path: KeeTheft/KeeTheft/bin/Release/KeeTheft.exe
